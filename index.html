@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Python_Syntax">Python Syntax</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Conditional_Statements">Conditional Statements</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is used for:</p>
+            <ul>
+                <li>web development (server-side)</li>
+                <li>software development</li>
+                <li>mathematics</li>
+                <li>system scripting</li>
+            </ul>
+            <p>Python is known for its simple syntax similar to the English language.</p>
+        </section>
+
+        <section class="main-section" id="Python_Syntax">
+            <header>Python Syntax</header>
+            <p>Python syntax can be executed by writing directly in the Command Line:</p>
+            <code>>>> print("Hello, World!")
+Hello, World!</code>
+            <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+            <code>print("Hello, World!")</code>
+            <p>Python uses indentation to define scope in the code. Other programming languages often use curly-brackets for this purpose.</p>
+            <code>if 5 > 2:
+    print("Five is greater than two!")</code>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables are containers for storing data values.</p>
+            <p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+            <code>x = 5
+y = "John"
+print(x)
+print(y)</code>
+            <p>Variables do not need to be declared with any particular type and can even change type after they have been set.</p>
+            <code>x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)</code>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things.</p>
+            <p>Python has the following data types built-in by default:</p>
+            <ul>
+                <li>Text Type: <code>str</code></li>
+                <li>Numeric Types: <code>int</code>, <code>float</code>, <code>complex</code></li>
+                <li>Sequence Types: <code>list</code>, <code>tuple</code>, <code>range</code></li>
+                <li>Mapping Type: <code>dict</code></li>
+                <li>Set Types: <code>set</code>, <code>frozenset</code></li>
+                <li>Boolean Type: <code>bool</code></li>
+                <li>Binary Types: <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code></li>
+            </ul>
+            <p>You can get the data type of any object by using the type() function:</p>
+            <code>x = 5
+print(type(x))</code>
+        </section>
+
+        <section class="main-section" id="Conditional_Statements">
+            <header>Conditional Statements</header>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <ul>
+                <li>Equals: <code>a == b</code></li>
+                <li>Not Equals: <code>a != b</code></li>
+                <li>Less than: <code>a < b</code></li>
+                <li>Less than or equal to: <code>a <= b</code></li>
+                <li>Greater than: <code>a > b</code></li>
+                <li>Greater than or equal to: <code>a >= b</code></li>
+            </ul>
+            <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+            <p>An "if statement" is written by using the if keyword.</p>
+            <code>a = 33
+b = 200
+if b > a:
+    print("b is greater than a")</code>
+            <p>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code.</p>
+        </section>
+    </main>
+</body>
+</html>
